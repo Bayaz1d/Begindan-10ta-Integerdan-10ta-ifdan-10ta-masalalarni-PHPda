@@ -1,0 +1,316 @@
+Begin
+<?php
+//1
+$a = 3;
+echo pow($a, 2);
+?>
+ 
+<?php
+//2
+$a = 3;
+echo 2*$a;
+?>
+ 
+<?php
+//3
+$a = 3;
+$b = 4;
+echo "S = ", $b * $a, "\n";
+echo "P = ", 2*($a+$b);
+?>
+ 
+<?php
+//4
+$d = 6;
+echo M_PI*$d
+?>
+ 
+<?php
+//5
+$a = 3;
+echo pow($a, 3), "\n", 6*pow($a, 2);
+?>
+ 
+<?php
+//6
+$a = 3; $b = 4; $c = 5;
+echo $a*$b*$c, "\n", 2*($a*$b+$a*$c+$b*$c);
+?>
+ 
+
+
+
+
+
+<?php
+//7
+$r = 3;
+echo 2*M_PI*$r, "\n", pow($r, 2)*M_PI;
+?>
+ 
+<?php
+//8
+$a = 3; $b = 4;;
+echo ($b+$a)/2;
+?>
+ 
+<?php
+//9
+$a = 3; $b = 4;;
+echo sqrt($a*$b);
+?>
+ 
+<?php
+//10
+$a = 3; $b = 4;;
+echo $a+$b, "\n", $a*$b, "\n", pow($a, 2), "\n", pow($b, 2);
+?>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Integer
+<?php
+//1
+$L = 999;
+echo (int)($L / 100);
+?>
+ 
+<?php
+//2
+$M = 9999;
+echo (int)($M / 1000);
+?>
+ 
+<?php
+//3
+$f = 99999;
+echo $f / 1024;
+?>
+ 
+<?php
+//4
+$a = 999;
+$b = 10;
+echo (int)($a / $b);
+?>
+ 
+<?php
+//5
+$a = 999;
+$b = 10;
+echo (int)($a / $b), "\n", ($a % $b);
+?>
+ 
+<?php
+//6
+$a = 98;
+echo (int)($a/10), "\n", $a % 10;
+?>
+ 
+<?php
+//7
+$a = 98;
+echo (int)($a/10) + ($a % 10);
+?>
+ 
+<?php
+//8
+$a = 98;
+echo ($a % 10)*10+(int)($a/10);
+?>
+ 
+<?php
+//9
+$a = 987;
+echo (int)($a / 100);
+?>
+ 
+
+<?php
+//10
+$a = 987;
+echo $a % 10, "\n", (int)(($a % 100) /10);
+?>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tarmoqlanuvchi
+<?php
+//1
+$a = 987;
+if ($a >= 0){
+    echo ++$a;
+}else{
+    echo $a;
+}
+?>
+ 
+<?php
+//2
+$a = -987;
+if ($a >= 0){
+    echo ++$a;
+}else{
+    echo $a-2;
+}
+?>
+ 
+<?php
+//3
+$a = 0;
+if ($a > 0){
+    echo ++$a;
+}else if($a<0){
+    echo $a-2;
+}else{
+    $a = 10;
+    echo $a;
+}
+?>
+ 
+<?php
+//4
+$a = 1; $b = -1; $c = 5; 
+$k = 0;
+if ($a < 0){
+    ++$k;
+}if($b < 0){
+    ++$k;
+}if($c < 0){
+    ++$k;
+}echo $k;
+?>
+ 
+<?php
+//5
+$a = 1; $b = 4; $c = -2;
+$musbat = 0;
+$manfiy = 0;
+if ($a < 0) {
+    $manfiy_sonlar++;
+} elseif ($a > 0) { 
+    $musbat_sonlar++;
+}
+if ($b < 0) {
+    $manfiy_sonlar++;
+} elseif ($b > 0) {
+    $musbat_sonlar++;
+}
+if ($c < 0) {
+    $manfiy_sonlar++;
+} elseif ($c > 0) {
+    $musbat_sonlar++;
+}
+echo "Manfiy sonlar: " . $manfiy_sonlar . "\n";
+echo "Musbat sonlar: " . $musbat_sonlar . "\n";
+?>
+ 
+<?php
+//6
+$a = 3; $b = 7;
+if($a > $b){
+    echo $a;
+}else{
+    echo $b;
+}
+?>
+ 
+<?php
+//6
+$a = 3; $b = 7;
+if($a > $b){
+    echo "1-";
+}else{
+    echo "2-";
+}
+?>
+ 
+<?php
+//7
+$a = 3; $b = 7;
+if($a > $b){
+    echo "2-";
+}else{
+    echo "1-";
+}
+?>
+ 
+<?php
+//8
+$a = 3; $b = 7;
+if($a > $b){
+    echo "{$a}\n{$b}";
+}else{
+    echo "{$b} \n {$a}";
+}
+?>
+ 
+<?php
+//9
+$a = 8; $b = 7;
+if($a > $b){
+    echo $b+$a;
+}else{
+    echo $b;
+}
+?>
+ 
+<?php
+//10
+$a = 8; $b = 7;
+if($a != $b){
+    $a = $a + $b;
+    $b = $a + $b;
+    echo "{$a}\n{$b}";
+}else{
+    $b = 0;
+    $a = 0;
+    echo "{$a}\n{$b}";
+}
+?>
+ 
+
+
+
+
+
+
+
+
+
